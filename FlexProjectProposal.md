@@ -29,7 +29,8 @@ I never look at wireframes, do I actually need to make one?
 
 This project will be implemented with the following technologies:
 
-- Vanilla JavaScript and `jquery` for overall structure and logic
+- Vanilla JavaScript and `jQuery` for overall structure and logic - maybe on jQuery
+- Anime js?
 - Webpack to bundle and serve up the various scripts.
 
 
