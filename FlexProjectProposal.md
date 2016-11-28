@@ -26,6 +26,7 @@ Home
 ![screenshot](./wireframes/AlgorithmVisualizationHome.png)
 
 Algorithm Visualization
+
 ![screenshot](./wireframes/AlgorithmVisualization.png)
 
 ### Architecture and Technologies
