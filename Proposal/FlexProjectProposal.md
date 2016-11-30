@@ -67,14 +67,20 @@ If there's extra time, the following features could be implemented:
 ### ScratchWork
 
 #### quickSort
-start: [5, 1, 2, 3, 7, 4, 0, 6]    choose random pivot el, e.g. 2
-layer1: [1, 0] + 2 + [5, 3, 6, 4, 7] recursively call quickSort on left and right halves
-                                     random pivots for each side, e.g. 1 and 4
-layer2: [0] + 1 + [] | [3] + 4  + [5, 7, 6]    left is sorted and [3] is sorted,
-                                               repeat for [5, 7, 6], random pivots 3 and 7
-layer3: [1] + 3 + [] | [5, 6] + 7 + []         left side is sorted, random pivot 6 on right
-layer4: [5] + 6 + []                           everything is sorted, now recombine
-combine1: [5, 6]
-combine2: [1, 3] | [5, 6, 7]
-combine3:[1, 1] | [3, 4, 5, 6, 7]
-combine4: [1, 1, 2, 3, 4, 5, 6, 7]
+start: [5, 1, 4, 3, 2]
+layer1: [1, 4, 3, 2] + 5 + []
+layer2: [] + 1 + [4, 3, 2]
+layer3: [3, 2] + 4 + []
+layer4: [2] + 3 + []
+combine1: [2, 3]
+combine2: [2, 3, 4]
+combine3: [1, 2, 3, 4]
+combine4: [1, 2, 3, 4, 5]
+
+start: [7, 7, 6, 2, 9, 8, 4]
+layer1: [6, 2, 4] + 7 + [7, 9, 8]
+layer2: [2, 4] + 6 + []    |    [] + 7 + [9, 8]
+layer3: [] + 2 + [4]       |    [8] + 9 + []
+combine1: [2, 4]           |    [8, 9]
+combine2: [2, 4, 6]        |    [7, 8, 9]
+combine3: [2, 4, 6, 7, 7, 8, 9]
