@@ -11,7 +11,7 @@ timers, I think this would be a good project for practicing them.
 
 This algorithms visualization should:
 
-- [ ] Be able to show the steps of a sorting algorithm like quickSort, try to get 2 alorithms working
+- [ ] Be able to show the steps of a sorting algorithm like quickSort, try to get 2 algorithms working
 - [ ] Animation of array elements using Anime.js with svg paths
 - [ ] Allow user to select algorithm to show
 
