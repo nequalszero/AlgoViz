@@ -76,5 +76,5 @@ layer3: [1] + 3 + [] | [5, 6] + 7 + []         left side is sorted, random pivot
 layer4: [5] + 6 + []                           everything is sorted, now recombine
 combine1: [5, 6]
 combine2: [1, 3] | [5, 6, 7]
-combine3:[1, 1] | [3, 4, 5, 6, 7]
-combine4: [1, 1, 2, 3, 4, 5, 6, 7]
+combine3:[0, 1] | [3, 4, 5, 6, 7]
+combine4: [0, 1, 2, 3, 4, 5, 6, 7]

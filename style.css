@@ -40,6 +40,28 @@ html, body {
   width: 100%;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+
+
 .light-green {
   background-color: #8cff66;
+}
+
+.light-blue {
+  background-color: #66b3ff;
+}
+
+.light-purple {
+  background-color: #d24dff;
+}
+
+.light-orange {
+  background-color: #ff9933;
+}
+
+.light-blue2 {
+  background-color: #99ccff;
 }
