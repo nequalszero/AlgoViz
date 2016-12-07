@@ -71,10 +71,20 @@ start: [5, 1, 2, 3, 7, 4, 0, 6]    choose random pivot el, e.g. 2
 layer1: [1, 0] + 2 + [5, 3, 6, 4, 7] recursively call quickSort on left and right halves
                                      random pivots for each side, e.g. 1 and 4
 layer2: [0] + 1 + [] | [3] + 4  + [5, 7, 6]    left is sorted and [3] is sorted,
-                                               repeat for [5, 7, 6], random pivots 3 and 7
-layer3: [1] + 3 + [] | [5, 6] + 7 + []         left side is sorted, random pivot 6 on right
+                                               repeat for [5, 7, 6], random pivot 7
+layer3: [5, 6] + 7 + []         left side is sorted, random pivot 6 on right
 layer4: [5] + 6 + []                           everything is sorted, now recombine
 combine1: [5, 6]
 combine2: [1, 3] | [5, 6, 7]
 combine3:[0, 1] | [3, 4, 5, 6, 7]
 combine4: [0, 1, 2, 3, 4, 5, 6, 7]
+
+
+
+Events:
+1.) Draw layer0 brackets and bring in start elements
+2.) Display text: Select random pivot
+2.) Layer 1: Display pivot element (2) with brackets
+3.) Layer 1: Render brackets for left and right halves
+4.) Layer 1: Place elements into left and right halves 1 by 1
+5.)

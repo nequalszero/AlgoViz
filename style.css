@@ -30,21 +30,63 @@ html, body {
 
 .vis-area-title {
   width: 100%;
-  font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+  box-sizing: border-box;
+}
+
+#drawing-area {
+  position: relative;
+  width: 100%;
+}
+
+.array-element-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  /*border: 1px solid blue;*/
+}
+
+.array-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+.bracket {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .layer {
   width: 100%;
 }
 
+svg.path-container {
+  position: absolute;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
 .hidden {
   opacity: 0;
 }
-
-
 
 .light-green {
   background-color: #8cff66;
