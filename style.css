@@ -15,8 +15,8 @@ html, body {
   align-items: center;
   width: 200px;
   height: 100%;
-  border: 1px solid black;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 #visualization-area {
@@ -24,8 +24,8 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  border: 1px solid black;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 .vis-area-title {
@@ -60,14 +60,7 @@ html, body {
   box-sizing: border-box;
 }
 
-.bracket {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.plus {
+.bracket-element, .plus-element, .space-element {
   position: absolute;
   display: flex;
   justify-content: center;
