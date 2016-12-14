@@ -10,10 +10,12 @@ html, body {
 
 #sidebar-container {
   display: flex;
+  /*display: hidden;*/
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 200px;
+  width: 0px;
+  /*width: 200px;*/
   height: 100%;
   box-sizing: border-box;
   border: 1px solid black;
@@ -35,6 +37,7 @@ html, body {
   padding-bottom: 10px;
   text-align: center;
   box-sizing: border-box;
+  border-bottom: 1px solid black;
 }
 
 #drawing-area {
@@ -86,26 +89,73 @@ svg.path-container {
   box-sizing: border-box;
 }
 
-.layer-background:first-child {
-  border-top: 1px solid black;
-}
-
-.light-green {
-  background-color: #8cff66;
-}
-
-.light-green2 {
-  background-color: #53ff1a;
-}
-
-.light-blue {
-  background-color: #66b3ff;
+.light-blue1 {
+  background-color: #5cd6d6;
 }
 
 .light-blue2 {
-  background-color: #99ccff;
+  background-color: #2eb8b8;
 }
 
 .light-blue3 {
-  background-color: #3399ff;
+  background-color: #248f8f;
+}
+
+.light-blue4 {
+  background-color: #1f7a7a;
+}
+
+.light-blue5 {
+  background-color: #196666;
+}
+
+@keyframes active {
+    0%   {background-color:white;}
+    /*25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}*/
+    100% {background-color:red;}
+}
+
+@keyframes activePivot {
+    0%   {background-color:white;}
+    /*25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}*/
+    100% {background-color:yellow;}
+}
+
+@keyframes inactive {
+  0%   {background-color:red;}
+  /*25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}*/
+  100% {background-color:white;}
+}
+
+.active-element > .array-element{
+  animation-name: active;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: active;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.inactive-element > .array-element{
+  animation-name: inactive;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: inactive;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.pivot-element > .array-element{
+  animation-name: activePivot;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: activePivot;
+  -webkit-animation-duration: 0.15s;
+  -webkit-animation-fill-mode: forwards;
 }
