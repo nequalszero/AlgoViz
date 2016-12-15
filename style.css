@@ -8,9 +8,32 @@ html, body {
   height: 100%;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+.linkedin-github-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-right: 30px;
+}
+
+.linkedin-container, .github-container {
+  padding: 5px 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font: 18px sans-serif;
+}
+
 #sidebar-container {
   display: flex;
-  /*display: hidden;*/
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -18,7 +41,7 @@ html, body {
   /*width: 200px;*/
   height: 100%;
   box-sizing: border-box;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 #visualization-area {
@@ -32,7 +55,7 @@ html, body {
 
 .vis-area-title {
   width: 100%;
-  font-size: 48px;
+  /*font-size: 48px;*/
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -83,10 +106,30 @@ svg.path-container {
 
 .layer-background {
   position: absolute;
+  display: flex;
+  justify-content: flex-start;
   width: 100%;
   z-index: -1;
   border-bottom: 1px solid black;
   box-sizing: border-box;
+}
+
+.layer-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  font: 18px sans-serif;
+  border: 3px solid black;
+}
+
+.layer-label > p {
+
 }
 
 .light-blue1 {
@@ -135,27 +178,27 @@ svg.path-container {
 
 .active-element > .array-element{
   animation-name: active;
-  animation-duration: 0.15s;
+  animation-duration: 0.25s;
   animation-fill-mode: forwards;
   -webkit-animation-name: active;
-  -webkit-animation-duration: 0.15s;
+  -webkit-animation-duration: 0.25s;
   -webkit-animation-fill-mode: forwards;
 }
 
 .inactive-element > .array-element{
   animation-name: inactive;
-  animation-duration: 0.15s;
+  animation-duration: 0.25s;
   animation-fill-mode: forwards;
   -webkit-animation-name: inactive;
-  -webkit-animation-duration: 0.15s;
+  -webkit-animation-duration: 0.25s;
   -webkit-animation-fill-mode: forwards;
 }
 
 .pivot-element > .array-element{
   animation-name: activePivot;
-  animation-duration: 0.15s;
+  animation-duration: 0.25s;
   animation-fill-mode: forwards;
   -webkit-animation-name: activePivot;
-  -webkit-animation-duration: 0.15s;
+  -webkit-animation-duration: 0.25s;
   -webkit-animation-fill-mode: forwards;
 }
