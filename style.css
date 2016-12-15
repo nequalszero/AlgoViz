@@ -128,8 +128,34 @@ svg.path-container {
   border: 3px solid black;
 }
 
-.layer-label > p {
+.legend {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5%;
+  box-sizing: border-box;
+}
 
+.legend-entry-cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.legend-entry-cont > p {
+  font: 18px sans-serif;
+}
+
+.legend-array-element-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  /*border: 1px solid blue;*/
 }
 
 .light-blue1 {
